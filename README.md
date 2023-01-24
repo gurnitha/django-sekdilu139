@@ -32,3 +32,10 @@ Github: https://github.com/gurnitha/django-sekdilu139
         modified:   apps/sekdilu139/admin.py
         new file:   apps/sekdilu139/migrations/0001_initial.py
         modified:   apps/sekdilu139/models.py
+
+#### 02.2 Create SubCategory model
+
+        modified:   README.md
+        modified:   apps/sekdilu139/admin.py
+        new file:   apps/sekdilu139/migrations/0002_alter_category_options_alter_category_slug_and_more.py
+        modified:   apps/sekdilu139/models.py

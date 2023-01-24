@@ -4,12 +4,20 @@
 from django.contrib import admin
 
 # Import from locals
-from apps.sekdilu139.models import Category
+from apps.sekdilu139.models import Category, SubCategory
 
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):    
-	list_display = ['name', 'slug', 'created']
+	list_display = ['name', 'slug',]
+	list_filter = ['name',]    
+	search_fields = ['name',]    
+	prepopulated_fields = {'slug': ('name',)}    
+
+
+@admin.register(SubCategory)
+class SubCategoryAdmin(admin.ModelAdmin):    
+	list_display = ['name', 'slug','category_id']
 	list_filter = ['name',]    
 	search_fields = ['name',]    
 	prepopulated_fields = {'slug': ('name',)}    
