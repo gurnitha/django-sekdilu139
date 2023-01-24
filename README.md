@@ -57,3 +57,15 @@ Github: https://github.com/gurnitha/django-sekdilu139
         new file:   apps/sekdilu139/migrations/0007_person_image_alter_person_slug.py
         modified:   apps/sekdilu139/models.py
         new file:   media/person/cat-1.png
+
+
+## 03. Create Pages
+
+#### 03.1 Create home page
+
+        modified:   README.md
+        new file:   apps/sekdilu139/urls.py
+        modified:   apps/sekdilu139/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   templates/sekdilu139/index.html
