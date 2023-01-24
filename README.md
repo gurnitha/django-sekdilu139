@@ -82,3 +82,25 @@ Github: https://github.com/gurnitha/django-sekdilu139
         modified:   README.md
         new file:   templates/base.html
         modified:   templates/sekdilu139/index.html
+
+#### 03.4 Rendering person and sosmed objects to home page
+
+        modified:   README.md
+        modified:   apps/sekdilu139/admin.py
+        new file:   apps/sekdilu139/migrations/0008_remove_person_sosmed_person_is_facebook_and_more.py
+        new file:   apps/sekdilu139/migrations/0009_sosmed_remove_person_is_facebook_and_more.py
+        new file:   apps/sekdilu139/migrations/0010_sosmed_url.py
+        new file:   apps/sekdilu139/migrations/0011_alter_sosmed_name.py
+        modified:   apps/sekdilu139/models.py
+        modified:   apps/sekdilu139/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        modified:   templates/base.html
+        modified:   templates/sekdilu139/index.html
+        new file:   uploads/media/person/1.jpg
+
+        NOTE:
+
+        1. Removed sosmed status fields from Person model
+        2. Created Sosmed model
+        3. In Person field, add sosmed_id field with ManyToMany rel with Sosmed model

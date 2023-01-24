@@ -38,6 +38,17 @@ class SubCategory(models.Model):
 		return self.name
 
 
+# MODEL: Sosmed
+class Sosmed(models.Model):
+	name = models.CharField(max_length=50, null=True)
+	url = models.URLField(max_length=255, null=True)
+	created = models.DateTimeField(auto_now_add=True)
+	updated = models.DateTimeField(auto_now=True)
+
+	# Adding string method 
+	def __str__(self):
+		return self.name
+
 # MODEL: Rank
 class Rank(models.Model):
 	name = models.CharField(max_length=50, blank=False)
@@ -59,13 +70,6 @@ class Rank(models.Model):
 # MODEL: Person
 class Person(models.Model):
 
-	# Defining Blog Status
-	class SosmedChoices(models.TextChoices):        
-		FB = 'fb', 'Facebook'        
-		TW = 'tw', 'Twitter'
-		LINK = 'link', 'Linktend'
-		IG = 'ig', 'Insta Gram'
-
 	class Status(models.TextChoices):        
 		DRAFT = 'DF', 'Draft'        
 		PUBLISHED = 'PB', 'Published'
@@ -82,14 +86,7 @@ class Person(models.Model):
 	pengalaman_kerja = models.TextField()
 	keahlian = models.TextField()
 	pengalaman = models.TextField()
-	sosmed = models.CharField(
-			max_length=5,                              
-			choices=SosmedChoices.choices,                              
-			default=SosmedChoices.FB)
-	status = models.CharField(
-			max_length=2,                              
-			choices=Status.choices,                              
-			default=Status.DRAFT)
+	sosmed_id = models.ManyToManyField(Sosmed, related_name='sosmed')
 	publish = models.DateTimeField(default=timezone.now)    
 	created = models.DateTimeField(auto_now_add=True)
 	updated = models.DateTimeField(auto_now=True)
