@@ -22,3 +22,13 @@ Github: https://github.com/gurnitha/django-sekdilu139
         new file:   config/urls.py
         new file:   config/wsgi.py
         new file:   manage.py
+
+
+## 02. Create Django Model
+
+#### 02.1 Create Category model
+
+        modified:   README.md
+        modified:   apps/sekdilu139/admin.py
+        new file:   apps/sekdilu139/migrations/0001_initial.py
+        modified:   apps/sekdilu139/models.py
