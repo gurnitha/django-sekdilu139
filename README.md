@@ -76,3 +76,9 @@ Github: https://github.com/gurnitha/django-sekdilu139
         modified:   README.md
         modified:   config/settings.py
         modified:   templates/sekdilu139/index.html
+
+#### 03.3 Template inheritance and mdify home page
+
+        modified:   README.md
+        new file:   templates/base.html
+        modified:   templates/sekdilu139/index.html
