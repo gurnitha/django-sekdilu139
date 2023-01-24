@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+        <section class="candidate-details pt-100 pb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="candidate-profile">
+                            <img src="{{person.image.url}}" alt="candidate image" height="70" width="70">
+                            <h3>{{person.name}}</h3>
+                            <p>{{person.jabatan|capfirst}}</p>
+
+                            <ul>
+                                <li>                                 
+                                    <a href="tel:+100230342">
+                                        <i class='bx bxs-phone'></i>
+                                        {{person.phone}}
+                                    </a>
+                                </li>
+                                <li>                                   
+                                    <a href="mailto:john@gmail.com">
+                                        <i class='bx bxs-location-plus'></i>
+                                        {{person.email}}
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="candidate-social">
+                            	{% for person in persons %}
+                            	{% for x in person.sosmed_id.all %}
+                                <a href="{{x.url}}" target="_blank"><i class="bx bxl-{{x.name}}"></i></a>
+                                <!-- <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+                                <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>                           
+                                <a href="#" target="_blank"><i class="bx bxl-instagram"></i></a>  -->    
+                                {% endfor %}                      
+                                {% endfor %}                      
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="candidate-info-text">
+                            <h3>Tentang saya</h3>
+                            <p>{{person.about_me|safe}}</p>
+                        </div>
+
+                        <div class="candidate-info-text candidate-education">
+                            <h3>Pendidikan</h3>
+
+                            <div class="education-info">
+                                <h4>{{person.pendidikan|safe}}</h4>
+                            </div>
+                        </div>
+
+                        <div class="candidate-info-text candidate-experience">
+                            <h3>Pengalaman</h3>
+                            
+                            <ul>
+                                {{person.pengalaman_kerja|safe}}
+                            </ul>
+                        </div>
+
+                        <div class="candidate-info-text candidate-skill">
+                            <h3>Skills</h3>
+                            
+                            <ul>
+                                {{person.keahlian|safe}}
+                            </ul>
+                        </div>
+
+                        <div class="candidate-info-text candidate-skill">
+                            <h3>Keluarga</h3>
+                            
+                            <ul>
+                                {{person.keluarga|safe}}
+                            </ul>
+                        </div>
+
+                        <div class="candidate-info-text candidate-skill">
+                            <h3>Filosofi</h3>
+                            
+                            <ul>
+                                {{person.filosofi|safe}}
+                            </ul>
+                        </div>
+
+                        <div class="candidate-info-text text-center">
+                            <div class="theme-btn">
+                                <a href="#" class="default-btn">Hire Me</a>
+                                <a href="#" class="default-btn">Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{% endblock content %}

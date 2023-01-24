@@ -10,4 +10,5 @@ app_name='sekdilu139'
 
 urlpatterns = [
     path('', views.home_page, name='home_page'),
+    path('/<slug>/', views.detail_page, name='detail_page'),
 ]

@@ -3,6 +3,7 @@
 # Import django modules
 from django.db import models
 from django.utils import timezone
+from ckeditor_uploader.fields import RichTextUploadingField
 
 
 # MODEL: Category
@@ -81,11 +82,12 @@ class Person(models.Model):
 	jabatan = models.ForeignKey(Rank, on_delete=models.CASCADE)
 	phone = models.CharField(max_length=50, blank=True)
 	email = models.CharField(max_length=50, blank=False)
-	about_me = models.TextField()
-	pendidikan = models.TextField()
-	pengalaman_kerja = models.TextField()
-	keahlian = models.TextField()
-	pengalaman = models.TextField()
+	about_me = RichTextUploadingField(blank=True)
+	pendidikan = RichTextUploadingField(blank=True)
+	pengalaman_kerja = RichTextUploadingField(blank=True)
+	keahlian = RichTextUploadingField(blank=True)
+	keluarga = RichTextUploadingField(blank=True)
+	filosofi = RichTextUploadingField(blank=True)
 	sosmed_id = models.ManyToManyField(Sosmed, related_name='sosmed')
 	publish = models.DateTimeField(default=timezone.now)    
 	created = models.DateTimeField(auto_now_add=True)

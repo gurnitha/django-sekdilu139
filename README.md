@@ -104,3 +104,19 @@ Github: https://github.com/gurnitha/django-sekdilu139
         1. Removed sosmed status fields from Person model
         2. Created Sosmed model
         3. In Person field, add sosmed_id field with ManyToMany rel with Sosmed model
+
+#### 03.5 Create detail page
+
+        modified:   README.md
+        new file:   apps/sekdilu139/migrations/0012_remove_person_pengalaman_alter_person_about_me_and_more.py
+        new file:   apps/sekdilu139/migrations/0013_person_keluarga.py
+        new file:   apps/sekdilu139/migrations/0014_person_pilosofi.py
+        new file:   apps/sekdilu139/migrations/0015_rename_pilosofi_person_filosofi.py
+        modified:   apps/sekdilu139/models.py
+        modified:   apps/sekdilu139/urls.py
+        modified:   apps/sekdilu139/views.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   templates/sekdilu139/detail.html
+        modified:   templates/sekdilu139/index.html
+        new file:   uploads/media/person/berlian.PNG
