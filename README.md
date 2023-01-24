@@ -48,3 +48,12 @@ Github: https://github.com/gurnitha/django-sekdilu139
         new file:   apps/sekdilu139/migrations/0004_alter_category_options_alter_rank_options_and_more.py
         new file:   apps/sekdilu139/migrations/0005_alter_category_slug_alter_rank_slug_and_more.py
         modified:   apps/sekdilu139/models.py
+
+#### 02.4 Create Person model
+
+        modified:   README.md
+        modified:   apps/sekdilu139/admin.py
+        new file:   apps/sekdilu139/migrations/0006_person_person_sekdilu139__publish_7747e8_idx.py
+        new file:   apps/sekdilu139/migrations/0007_person_image_alter_person_slug.py
+        modified:   apps/sekdilu139/models.py
+        new file:   media/person/cat-1.png

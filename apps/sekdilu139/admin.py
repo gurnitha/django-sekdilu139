@@ -4,7 +4,7 @@
 from django.contrib import admin
 
 # Import from locals
-from apps.sekdilu139.models import Category, SubCategory, Rank
+from apps.sekdilu139.models import Category, SubCategory, Rank, Person
 
 
 @admin.register(Category)
@@ -27,3 +27,14 @@ class RankAdmin(admin.ModelAdmin):
 	list_filter = ['category_id',]    
 	search_fields = ['name',]    
 	prepopulated_fields = {'slug': ('name',)}    
+
+@admin.register(Person)
+class PersonAdmin(admin.ModelAdmin):    
+	list_display = ['name', 'sosmed', 'slug', 'category_id', 'status']
+	# list_display = ['name', 'slug', 'sosmed', 'publish', 'status']
+	list_filter = ['status', 'created', 'publish']    
+	search_fields = ['name',]    
+	prepopulated_fields = {'slug': ('name',)}    
+	# raw_id_fields = ['catgery_id']    
+	date_hierarchy = 'publish'    
+	ordering = ['status', 'publish']
