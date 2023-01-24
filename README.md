@@ -39,3 +39,12 @@ Github: https://github.com/gurnitha/django-sekdilu139
         modified:   apps/sekdilu139/admin.py
         new file:   apps/sekdilu139/migrations/0002_alter_category_options_alter_category_slug_and_more.py
         modified:   apps/sekdilu139/models.py
+
+#### 02.3 Create Rank model
+
+        modified:   README.md
+        modified:   apps/sekdilu139/admin.py
+        new file:   apps/sekdilu139/migrations/0003_alter_category_slug_alter_subcategory_slug_rank.py
+        new file:   apps/sekdilu139/migrations/0004_alter_category_options_alter_rank_options_and_more.py
+        new file:   apps/sekdilu139/migrations/0005_alter_category_slug_alter_rank_slug_and_more.py
+        modified:   apps/sekdilu139/models.py
