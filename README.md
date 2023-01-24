@@ -120,3 +120,8 @@ Github: https://github.com/gurnitha/django-sekdilu139
         new file:   templates/sekdilu139/detail.html
         modified:   templates/sekdilu139/index.html
         new file:   uploads/media/person/berlian.PNG
+
+#### 03.6 Modified footer
+
+        modified:   README.md
+        modified:   templates/base.html
