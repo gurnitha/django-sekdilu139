@@ -69,3 +69,10 @@ Github: https://github.com/gurnitha/django-sekdilu139
         modified:   config/settings.py
         modified:   config/urls.py
         new file:   templates/sekdilu139/index.html
+
+#### 03.2 Add template and static files to home page
+
+        modified:   .gitignore
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   templates/sekdilu139/index.html
