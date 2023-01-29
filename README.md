@@ -125,3 +125,21 @@ Github: https://github.com/gurnitha/django-sekdilu139
 
         modified:   README.md
         modified:   templates/base.html
+
+#### 03.7 Create requirements.txt file
+
+        modified:   README.md
+        new file:   requirements.txt
+        new file:   venv3941/Scripts/Activate.ps1
+        new file:   venv3941/Scripts/activate
+        new file:   venv3941/Scripts/activate.bat
+        new file:   venv3941/Scripts/deactivate.bat
+        new file:   venv3941/Scripts/django-admin.exe
+        new file:   venv3941/Scripts/pip.exe
+        new file:   venv3941/Scripts/pip3.10.exe
+        new file:   venv3941/Scripts/pip3.9.exe
+        new file:   venv3941/Scripts/pip3.exe
+        new file:   venv3941/Scripts/python.exe
+        new file:   venv3941/Scripts/pythonw.exe
+        new file:   venv3941/Scripts/sqlformat.exe
+        new file:   venv3941/pyvenv.cfg
