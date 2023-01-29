@@ -143,3 +143,15 @@ Github: https://github.com/gurnitha/django-sekdilu139
         new file:   venv3941/Scripts/pythonw.exe
         new file:   venv3941/Scripts/sqlformat.exe
         new file:   venv3941/pyvenv.cfg
+
+#### 03.8 Removing (docs) from the project folder
+
+        modified:   README.md
+        1. Removing _docs
+        deleted:    _docs/db-skema.py
+        
+        2. Modified url path
+        modified:   apps/sekdilu139/urls.py
+
+        from    :path('/<slug>/'
+        to      :path('<slug>/'
