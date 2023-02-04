@@ -155,3 +155,6 @@ Github: https://github.com/gurnitha/django-sekdilu139
 
         from    :path('/<slug>/'
         to      :path('<slug>/'
+
+
+## 04. DEPLOYMENT
