@@ -1,6 +1,7 @@
 # new
 _docs
-config/static
+#config/static
+venv3941
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

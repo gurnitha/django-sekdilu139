@@ -158,3 +158,25 @@ Github: https://github.com/gurnitha/django-sekdilu139
 
 
 ## 04. DEPLOYMENT
+
+
+#### 04.1 Setting up for deployment
+
+        1. Modified
+        modified:   README.md
+        modified:   .gitignore
+        
+        2. Add static root
+        modified:   config/settings.py
+
+        STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+        
+        3. Add static files
+        new file:   config/static/assets/css/bootstrap.min.css
+        ... 
+        new file:   config/static/assets/php/form-process.php
+
+        4. Configure static root path
+        modified:   config/urls.py
+
+        urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
